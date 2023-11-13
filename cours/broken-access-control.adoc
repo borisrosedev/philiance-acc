@@ -1,0 +1,155 @@
+= Broken Access Control
+
+== Introduction
+
+Passant de la cinquième position, 94 % des applications ont été testées pour une forme quelconque de mauvaise gestion des contrôles d'accès, avec un taux d'incidence moyen de 3,81 %, et ont le plus grand nombre d'occurrences dans l'ensemble de données contribué avec plus de 318 000. 
+
+=== Common Weakness Enumerations (CWE)
+
+Les Common Weakness Enumerations (CWE) notables incluses sont 
+[%step]
+* la CWE-200 : Exposition d'informations sensibles à un acteur non autorisé
+* la CWE-201 : Insertion d'informations sensibles dans des données envoyées
+* la CWE-352 : Falsification de requête côté serveur.
+
+== Description
+
+Le contrôle d'accès impose des politiques de sorte que les utilisateurs ne peuvent pas agir en dehors de leurs autorisations prévues. 
+
+Les défaillances conduisent généralement :
+[%step]
+* à la divulgation non autorisée d'informations
+* à la modification ou à la destruction de données
+* à l'exécution d'une fonction commerciale en dehors des limites de l'utilisateur. 
+
+== Vulnérabilités liées
+
+Les vulnérabilités courantes liées au contrôle d'accès incluent :
+
+=== Violation du principe du moindre privilère ou du refus par défaut
+
+Violations du principe du moindre privilège ou du refus par défaut, où l'accès ne devrait être accordé que pour des capacités, des rôles ou des utilisateurs particuliers, mais est disponible pour n'importe qui.
+
+=== Contournement des vérifications de contrôle d'accès
+
+Contournement des vérifications de contrôle d'accès :
+[%step]
+* en modifiant l'URL (altération des paramètres ou navigation forcée), 
+* l'état interne de l'application, 
+* la page HTML
+* en utilisant un outil d'attaque modifiant les demandes API.
+
+=== Autorisation de la visualisation ou de la modification
+
+Autorisation de la visualisation ou de la modification du compte de quelqu'un d'autre en fournissant son identifiant unique (références d'objets directs non sécurisées).
+
+=== Accès à une API
+
+Accès à une API avec des contrôles d'accès manquants pour POST, PUT et DELETE.
+
+
+=== Élévation de privilèges
+
+Élévation de privilèges. 
+[%step]
+* Agir en tant qu'utilisateur sans être connecté 
+* Agir en tant qu'administrateur lorsqu'on est connecté en tant qu'utilisateur.
+
+=== Manipulation des métadonnées
+
+Manipulation des métadonnées, comme la relecture ou la falsification :
+[%step]
+* - d'un jeton de contrôle d'accès JSON Web Token (JWT)
+* - un cookie 
+* - un champ caché manipulé pour :
+[%step]
+- élever les privilèges 
+- abuser de l'invalidation JWT.
+
+=== Mauvaise configuration CORS
+
+Une mauvaise configuration CORS permet un accès API à partir d'origines non autorisées/non fiables.
+
+===  Navigation forcée
+
+Navigation forcée vers des pages authentifiées en tant qu'utilisateur non authentifié ou vers des pages privilégiées en tant qu'utilisateur standard.
+
+
+== Prévention
+
+
+Le contrôle d'accès est efficace uniquement dans le code côté serveur de confiance ou une API sans serveur, où l'attaquant ne peut pas modifier la vérification du contrôle d'accès ou les métadonnées.
+
+Sauf pour les ressources publiques, le refus par défaut.
+
+
+=== Mécanismes de contrôle d'accès 
+
+Implémenter les mécanismes de contrôle d'accès uniques et les réutiliser dans toute l'application, en minimisant également l'utilisation du partage de ressources inter-origines (CORS).
+
+
+=== Respect de la propriété des enregistrements
+
+Les modèles de contrôle d'accès doivent faire respecter la propriété des enregistrements plutôt que d'accepter que l'utilisateur puisse créer, lire, mettre à jour ou supprimer n'importe quel enregistrement.
+
+
+=== Les exigences uniques de limite commerciale de l'application
+
+Les exigences uniques de limite commerciale de l'application devraient être appliquées par les modèles de domaine.
+
+=== ...
+
+En d'autres termes, les règles et les contraintes liées à l'activité commerciale devraient être intégrées dans la structure même de l'application, reflétées dans les modèles qui définissent son fonctionnement.
+
+=== Conséquences
+
+En faisant cela, l'application est mieux alignée sur les besoins spécifiques de l'entreprise ou de l'industrie qu'elle sert. Cela peut conduire à une application plus efficace, adaptable aux changements commerciaux et conforme aux exigences spécifiques du secteur. C'est une pratique recommandée dans le développement de logiciels orientés métier.
+
+=== Désactiver la liste de répertoires du service web
+
+Désactiver la liste de répertoires du serveur web et s'assurer que les métadonnées de fichier (par exemple, .git) et les fichiers de sauvegarde ne sont pas présents dans les racines web.
+
+=== Journaliser les échecs de contrôle d'accès
+
+Journaliser les échecs de contrôle d'accès, alerter les administrateurs lorsque cela est approprié (par exemple, échecs répétés).
+
+=== Limiter le taux daccès aux API et aux contrôleurs
+
+Limiter le taux d'accès aux API et aux contrôleurs pour minimiser les dommages causés par les outils d'attaque automatisée.
+
+== Invalider les identifiants de session étatiques côté serveur
+
+Les identifiants de session étatiques devraient être invalidés côté serveur après la déconnexion. 
+
+Les jetons JWT sans état devraient plutôt avoir une durée de vie courte pour minimiser la fenêtre d'opportunité pour un attaquant. 
+
+Pour les JWT à durée de vie plus longue, il est fortement recommandé de suivre les normes OAuth pour révoquer l'accès.
+
+=== Tests unitaires et d'intégration fonctionnels 
+
+Les développeurs et le personnel QA devraient inclure des tests d'unité et d'intégration fonctionnels pour le contrôle d'accès.
+
+== Exemples de scénarios d'attaque
+
+
+=== Scénario n°1
+
+Scénario n°1 : L'application utilise des données non vérifiées dans une requête SQL qui accède à des informations de compte 
+
+Un attaquant modifie simplement le paramètre du navigateur pour envoyer n'importe quel numéro de compte qu'il souhaite. Si cela n'est pas correctement vérifié, l'attaquant peut accéder au compte de n'importe quel utilisateur.
+
+
+https://example.com/app/accountInfo?acct=notmyacct
+
+
+
+=== Scénario n°2
+
+Un attaquant force simplement la navigation vers des URL cibles. 
+Les droits d'administrateur sont nécessaires pour accéder à la page d'administration.
+
+https://example.com/app/getappInfo
+https://example.com/app/admin_getappInfo
+
+Si un utilisateur non authentifié peut accéder à l'une ou l'autre des pages, c'est une faille. 
+Si un non-administrateur peut accéder à la page d'administration, c'est une faille.
