@@ -1,0 +1,66 @@
+= Cross-Site Scripting (XSS) 
+
+
+== Définition
+
+XSS est une attaque de sécurité qui se produit lorsque des attaquants injectent du code malveillant (le plus souvent du code JavaScript) dans des pages web consultées par d'autres utilisateurs. 
+
+=== ...
+
+L'attaque tire parti des sites web qui permettent aux utilisateurs d'entrer du texte ou des données qui sont ensuite incluses dans les pages web sans une validation ou un filtrage approprié.
+
+
+=== Différents types d'attaques XSS
+
+Il existe plusieurs types d'attaques XSS, mais elles partagent toutes un point commun : l'injection de code exécutable côté client (généralement JavaScript) dans les pages web.
+
+
+
+== les principaux types d'attaques XSS :
+
+=== XSS Stocké (Stored XSS) 
+
+L'attaquant injecte du code malveillant qui est stocké sur le serveur et renvoyé aux utilisateurs ultérieurs lorsqu'ils accèdent à une page spécifique.
+
+=== XSS Réfléchi (Reflected XSS)
+
+L'attaquant injecte du code malveillant qui est inclus dans l'URL d'une page et renvoyé à d'autres utilisateurs qui visitent ce lien.
+
+=== XSS Basé sur le Document (DOM-based XSS) 
+
+L'attaque se produit au niveau du Document Object Model (DOM) du navigateur, où le code JavaScript modifie la structure du DOM de la page web.
+
+=== Conséquences
+
+Les conséquences d'une attaque XSS peuvent être graves, notamment:
+[%step]
+* la collecte de données sensibles des utilisateurs
+* la redirection vers des sites malveillants
+* la manipulation du contenu de la page
+* d'autres actions nuisibles.
+
+=== Protections
+
+Pour se protéger contre les attaques XSS, il est essentiel de mettre en œuvre des pratiques de sécurité appropriées, telles que :
+
+=== Validation et échappement des données 
+
+Toutes les données entrantes (de l'utilisateur) doivent être validées et échappées correctement avant d'être incorporées dans les pages web.
+
+=== Utilisation de CSP (Content Security Policy)
+
+La politique de sécurité du contenu permet de limiter l'origine des ressources chargées sur une page, aidant à prévenir l'exécution de scripts malveillants.
+
+=== Éducation des développeurs 
+
+Sensibiliser les développeurs aux risques XSS et les former sur les meilleures pratiques de sécurité est essentiel pour réduire la vulnérabilité des applications web.
+
+=== Mises à jour régulières 
+
+S'assurer que les logiciels, les bibliothèques et les frameworks utilisés dans le développement web sont régulièrement mis à jour pour inclure les correctifs de sécurité.
+
+=== Utilisation de Web Application Firewalls (WAF)
+
+Les WAF peuvent détecter et bloquer les attaques XSS en surveillant le trafic web et en bloquant les requêtes malveillantes.
+
+En mettant en œuvre ces pratiques, les développeurs peuvent réduire significativement le risque d'attaques XSS et améliorer la sécurité globale de leurs applications web.

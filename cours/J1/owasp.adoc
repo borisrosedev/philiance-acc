@@ -1,0 +1,52 @@
+= L'OWASP 
+
+== Définition
+
+L'OWASP (Open Web Application Security Project) est une organisation à but non lucratif axée sur la sécurité des applications web. 
+
+== Ses missions
+
+Fondée en 2001, l'OWASP a pour mission :
+[%step]
+* de sensibiliser à la sécurité des applications web
+* de fournir des ressources et des outils pour aider à identifier et à atténuer les risques de sécurité, 
+* de promouvoir des pratiques de développement sécurisé.
+
+== Ses objectifs principaux
+
+=== Sensibilisation à la sécurité des applications web 
+
+L'OWASP cherche à sensibiliser les professionnels de l'informatique, les développeurs, les gestionnaires de projet et d'autres parties prenantes aux risques de sécurité spécifiques aux applications web.
+
+=== Fourniture de ressources et d'outils 
+
+L'OWASP développe et maintient un ensemble de ressources, d'outils et de bonnes pratiques de sécurité librement accessibles pour aider les organisations à améliorer la sécurité de leurs applications web.
+
+=== Formation et éducation 
+
+L'organisation organise des conférences, des ateliers et fournit des supports éducatifs pour aider les professionnels de la sécurité et du développement à acquérir des compétences en matière de sécurité des applications web.
+
+=== Collaboration et partage des connaissances 
+
+L'OWASP encourage la collaboration entre les professionnels de la sécurité, les développeurs et d'autres parties prenantes pour partager des connaissances, des expériences et des pratiques exemplaires en matière de sécurité des applications web.
+
+
+== OWASP Top 10
+
+=== La liste 
+
+L'un des projets les plus connus de l'OWASP est le "OWASP Top 10", une liste des dix principales vulnérabilités de sécurité des applications web. 
+
+=== Mise à jour
+
+Cette liste est mise à jour régulièrement pour refléter les nouvelles menaces et les tendances en matière de sécurité. 
+
+=== Une référence
+
+Elle sert de référence pour les professionnels de la sécurité et du développement dans le but d'améliorer la sécurité des applications web.
+
+=== En savoir plus
+
+link:./owasp-top-10.html[En savoir plus sur l'OWASP Top 10 (html)]
+link:./owasp-top-10.adoc[En savoir plus sur l'OWASP Top 10  (adoc)]
+

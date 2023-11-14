@@ -1,0 +1,64 @@
+= Le protocole HTTP
+
+== Définition
+
+Le protocole HTTP ou Hypertext Transfer Protocol, est un protocole de communication utilisé pour le transfert d'informations sur le World Wide Web. 
+
+=== ...
+
+Il définit la manière dont les messages sont formatés et transmis, ainsi que les actions que les serveurs web et les navigateurs doivent entreprendre en réponse à diverses commandes.
+
+=== Les points clefs :
+
+== Communication client-serveur 
+
+HTTP repose sur le modèle de communication client-serveur. 
+
+Un client, généralement un navigateur web, envoie des requêtes à un serveur web, qui répond ensuite à ces requêtes.
+
+== Sans état (stateless) 
+
+HTTP est considéré comme un protocole sans état, ce qui signifie que chaque requête du client est traitée indépendamment, sans que le serveur conserve une mémoire persistante de l'état de la communication. 
+
+=== ...
+
+Cela simplifie la mise en œuvre et améliore la scalabilité, mais nécessite souvent l'utilisation de mécanismes supplémentaires (comme les cookies) pour gérer l'état de la session.
+
+
+== Méthodes de requête 
+
+Les méthodes de requête définissent l'action que le client souhaite effectuer sur une ressource donnée. 
+
+
+Les méthodes les plus courantes sont:
+
+* GET (pour récupérer des données)
+* POST (pour soumettre des données au serveur)
+* PUT (pour mettre à jour une ressource)
+* DELETE (pour supprimer une ressource), etc.
+
+
+== URI (Uniform Resource Identifier) 
+
+Les ressources sur le web sont identifiées par des URI, qui peuvent prendre la forme d'URL (Uniform Resource Locator). Par exemple, "http://www.example.com/page.html" est une URL.
+
+
+== Codes d'état 
+
+Les réponses du serveur HTTP incluent des codes d'état qui indiquent le résultat de la requête. 
+
+=== Par exemple:
+
+[%step]
+* le code 200 indique une réussite
+* le code 404 signifie que la ressource n'a pas été trouvée
+* le code 500 indique une erreur interne du serveur.
+
+== Versioning 
+
+Différentes versions du protocole HTTP existent. Les versions majeures incluent HTTP/1.0, HTTP/1.1, et plus récemment, HTTP/2 et HTTP/3. Les nouvelles versions visent à améliorer les performances, la sécurité et les fonctionnalités.
+
+== Sécurité 
+
+Pour renforcer la sécurité des communications, HTTPS (HTTP Secure) est souvent utilisé. HTTPS utilise une couche de chiffrement SSL/TLS pour protéger les données transitant entre le client et le serveur.
+

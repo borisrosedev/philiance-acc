@@ -1,0 +1,124 @@
+= Challenge
+16:11
+
+== Rootkit
+.Question de Samy 
+Imagine qu'une personne bouscule un personne ayant un badge et le copie que se passe-t-il?
+
+.Réponse de Florian
+Flo : Le flipper 0 n'est pas capable de gérer le rolling code à l'heure actuelle.
+
+
+.Question de Hugo
+On oublie le badge, as-tu la preuve que la personne fait partie de ton entreprise?
+.Réponse de Da
+Je connais tous les salariés 
+
+.Question de Pi:
+Je te crame l'entreprise, comment faites vous pour récupérer les données ?
+.Réponse de Flo
+Il y a des backups en local et sur le cloud
+
+.Question de Chris
+Qui est dans la base de données , stagiaire, visiteur ?
+.Réponse de Flo / Dai 
+Les stagiaires sont dans la base de données avec le principe du moindre privilège 
+Les visiteurs ne sont pas dnas la base de données
+
+.Invitation de DA
+Samy/ Chris, présentez l'infrastructure, vous êtes combien, que faites-vous ?
+
+.Réponse de Chris
+Une entreprise de taille moyenne. 
+On a deux serveurs un vrai un faux.
+Dans le faux on a une DMZ, dedans un ad 
+Dans le vrai on a un WAF
+Deux FW pour la redondance pour éviter les surchages 
+Pour le Serveur Web on mettra un CDN. 
+Il y aura un honeypot ( pour faire distraction )
+Pour le vrai: on aura une DMZ : deux ad pour la redondance. 
+Dans la salle serveur ça va être un badget d'accès avec reconniassance faciale. 
+Si qqn par infraction ça fait sonner tout le site. 
+Nous mettons également en place des compagnes de sensibilisation une fois par mois. 
+Une certification iso/27001
+Des formations pour les utilisateurs : phiusphing  / audit régulier 
+
+
+
+.Question de Florian 
+DMZ vous avez mis un ad mais comment faites il pour communiquer avec le réseau local ?
+.Réponse de PI
+C'est un faux AD
+
+.Question de Florian
+Que veut dire CDN?
+
+.Réponse de Sami 
+Mauvaise définition
+
+.Question de Florian
+Qu'est-ce qu'un WAF
+
+.Réponse de Chris 
+mauvaise définition du WAF
+
+.Question de Florian :
+Reconnaissance faciale, laquelle ?
+
+.Réponse : Face ID Apple 
+
+
+.Question de Flo
+iso/27001 , quelle révision ?
+
+.Réponse de Pi:
+dossiers confidentiels ( une certification ) 2022
+
+.Question de Flo:
+Avez-vous une PSSI ? 
+Réponse : si on a la certification donc on l'a. 
+
+
+
+
+== Trojan
+
+
+.Question de Pi
+Comment est faite votre infrastructure ?
+
+
+.Réponse de Flo :  
+On a une infrastructure assez simple
+Nous avons deux firewall :
+Le premier est tout le temps actif 
+Le deuxième High Availability et Load Balancing :si le premier tomber, le duexième prend le relai, redondance. LB : le deuxième se met en action et prend une partie de charge. 
+Nous avons une belle DMZ ("zone démilitarisé"): permet à tout ce qui est dedans , faire communiquer le réseau local avec Internet, mais toute requête venant d'Internet est refusé. 
+Dans cette DMZ on a parrot os security : c'est un IDS et IPS et la moindre chose dans l'analyse qui est considéré comme une menace est remonté. 
+DMZ : contient deux serveurs web : Apache , l'un est le vrai, l'autre c'est un honeypot. 
+
+- Réseau local : IDS IPS; on a dedans une bdd (mariaD), j'ai un ad (active directory)
+Politique du moindre privilège.
+On a trois pc (PC Windows10 22-H-2 / Mise à jour de sécurité / end-of-life permet de voir les MAJ des versions). 
+J'ai un seul router caché derrière un FW
+J'ai des swtich de niveau 2 et de niveau 3 ( redondance )
+La formation de prévention
+Sécurité physique :
+- vigil à l'accueil 
+- pour les collorateurs on fonctionne avec des bases
+- registre personne externe à la société  (nom prénom numéro de téléphone)
+- caméra de surveillance 
+Salle serveur:
+- carte à puce 
+Ondulaires:
+- prise de relai en cas de coupure életrique 
+
+
+.Question de Pi 
+Comment êtes vous certain que les systèmes sont sécurisés auprès de Microsoft ?
+.Réponse de FLO 
+Pas d'ouverture de port si aucun besoin, maj automatiques auprès de l'ad  
+
+
+
+

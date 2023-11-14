@@ -1,0 +1,23 @@
+= Virus réseau
+
+== Attention
+
+Un virus qui se répand sur le réseau n'est pas, à proprement parler, un virus de réseau. 
+
+Seuls certains des types virus/programmes malveillants, comme les vers, peuvent être appelés virus de réseau. 
+
+== Usage des protocoles
+
+Plus spécifiquement, les virus de réseau utilisent les protocoles réseau tels que TCP, FTP, UDP, HTTP et les protocoles d'e-mail pour se multiplier. 
+
+== ...
+
+Souvent, ils n'affectent pas les fichiers système ou ne modifient pas les secteurs d'amorçage des disques durs. 
+
+== Infection de la mémoire de l'ordinateur agent
+
+Par contre, les virus de réseau infectent la mémoire de l'ordinateur agent en l'obligeant à inonder le réseau de trafic, ce qui peut entraîner des ralentissements, voire même une panne complète du réseau. 
+
+==  Scan de fichiers basées sur l'E/S
+
+Comme les virus de réseau restent en mémoire, ils sont souvent indétectables par les méthodes conventionnelles de scan de fichiers basées sur l'E/S.

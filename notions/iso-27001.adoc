@@ -1,0 +1,54 @@
+= ISO/IEC 27001 
+
+== Définition
+
+ISO/IEC 27001 est une norme internationale qui spécifie les exigences pour établir, mettre en œuvre, maintenir et améliorer un système de gestion de la sécurité de l'information (SMSI) au sein d'une organisation. 
+
+=== Protection des informations sensibles
+
+La norme vise à aider les organisations à protéger les informations sensibles et à assurer la confidentialité, l'intégrité et la disponibilité de ces informations. (voir CIA Triad)
+
+== Quelques points clés liés à la norme ISO/IEC 27001
+
+== Objectif principal
+
+L'objectif principal de la norme ISO/IEC 27001 est de fournir un cadre pour établir, mettre en œuvre, maintenir et améliorer continuellement un SMSI au sein d'une organisation.
+
+== Approche basée sur les risques
+
+La norme adopte une approche basée sur les risques pour la gestion de la sécurité de l'information. 
+
+=== ...
+
+Cela signifie que les organisations doivent identifier et évaluer les risques liés à la sécurité de l'information et mettre en place des mesures pour les traiter de manière appropriée.
+
+== Exigences du SMSI
+
+ISO/IEC 27001 spécifie des exigences pour plusieurs aspects du SMSI, notamment 
+[%step]
+* la politique de sécurité de l'information
+* la gestion des actifs
+* la sécurité des ressources humaines
+* la gestion des accès
+* la cryptographie
+* la sécurité physique
+* la gestion des incidents de sécurité
+* la gestion des changements
+* etc.
+
+== Certification 
+
+Les organisations peuvent choisir de faire certifier leur SMSI par des organismes de certification indépendants conformément à la norme ISO/IEC 27001. La certification atteste que l'organisation respecte les exigences de la norme.
+
+== Amélioration continue
+
+La norme encourage l'amélioration continue du SMSI en mettant en place un processus d'évaluation régulière des performances du système et en prenant des mesures pour résoudre les problèmes identifiés.
+
+== Compatibilité avec d'autres normes
+
+ISO/IEC 27001 est conçue pour être compatible avec d'autres normes de gestion, telles que ISO 9001 (gestion de la qualité) et ISO 14001 (gestion de l'environnement), facilitant ainsi l'intégration des systèmes de gestion dans une organisation.
+
+== Application à tout type d'organisation 
+
+La norme est conçue pour être applicable à tout type d'organisation, quels que soient sa taille, son secteur d'activité ou son type.
+

@@ -1,0 +1,16 @@
+== Cheval de Troie
+
+=== Ports
+
+Les programmes Cheval de Troie utilisent souvent les ports pour accéder:
+[%step]
+* aux ordinateurs
+* aux programmes exécutables. 
+
+=== Aucune réplication
+
+Les programmes Cheval de Troie ne se répliquent pas, mais résident dans des systèmes pour effectuer des opérations malveillantes, telles que l'ouverture des ports aux pirates. 
+
+=== Solutions antivirus , efficaces ?
+
+Les solutions antivirus conventionnelles peuvent détecter et supprimer les virus, mais pas les chevaux de Troie, notamment ceux qui ont déjà pénétré votre système.

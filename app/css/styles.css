@@ -1,0 +1,157 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    background: url('https://cdn.pixabay.com/photo/2023/09/16/21/31/girl-8257551_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease-in-out ;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 400px;
+    border: solid black 3px;
+    margin: 0;
+}
+
+.login-form-inputs {
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+.login-form input {
+    margin: 10px 0;
+    padding: 10px 8px ;
+}
+
+.login-form  button {
+    margin: 10px 0;
+    padding: 5px 8px ;
+}
+
+.error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(187, 77, 77);
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+} 
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+    
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+.header-icon {
+    color: white;
+    font-size: 20px;
+}
+
+li {
+    margin: 0 10px;
+    text-align: center;
+ 
+
+}
+
+.login-page {
+
+    display: flex;
+    align-items: center;
+    border: solid white 3px;
+    background-color: white;
+    justify-content: center;
+    align-self: center;
+
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.app-header {
+
+    display: flex;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(27, 27, 27);
+    height: 6vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    color: white;
+    box-shadow: 1px 1px 10px gray;
+}
+
+main {
+
+    margin-top: 10vh;
+}
+
+
+.user-products {
+    display: flex;
+    flex-direction: row;
+}
+
+
+article {
+
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    overflow: hidden;
+  
+
+}
+
+img:hover {
+    transform: scale(1.2);
+}

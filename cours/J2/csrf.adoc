@@ -1,0 +1,75 @@
+= XSRF 
+
+
+== Une attaque de sécurité sur utilisateur authentifié 
+
+(Cross-Site Request Forgery), également connue sous le nom de CSRF, est une attaque de sécurité qui cible les utilisateurs authentifiés sur un site web. 
+
+
+== Modus operandi 
+
+L'attaque exploite la confiance entre un site web et un utilisateur authentifié pour exécuter des actions non autorisées à l'insu de l'utilisateur.
+
+
+== Côté Client 
+
+
+une attaque XSRF se déroule généralement de la manière suivante :
+
+
+=== Acte 1 : Connexion du client
+
+L'utilisateur se connecte à un site web en fournissant ses informations d'identification (nom d'utilisateur et mot de passe) et obtient un jeton d'authentification (comme un cookie) pour identifier sa session.
+
+
+=== Acte 2 : Visiter un site malveillant durant sa session
+
+Pendant que l'utilisateur est toujours authentifié, il visite un autre site malveillant contrôlé par l'attaquant. 
+
+Ce site peut contenir du code malveillant, tel qu'une image, une vidéo ou un script, qui effectuera des requêtes HTTP à l'insu de l'utilisateur.
+
+=== Acte 3 : Utilisation d'une URL d'action sensible avec informatins de session
+
+
+Le code malveillant du site malveillant utilise l'URL d'une action sensible (par exemple, changer le mot de passe, effectuer un achat, supprimer un compte, etc.) sur le site légitime en utilisant les informations d'authentification stockées dans les cookies du site cible.
+
+
+=== Acte 4 : Montrer patte blanche : done, Axios (par ex) n'y voit que du feu  !
+
+Lorsque le navigateur de l'utilisateur effectue des requêtes HTTP vers le site légitime, les cookies d'authentification sont automatiquement inclus dans les en-têtes de requête. Cela signifie que le site légitime considérera les requêtes comme valides, car elles proviennent d'un utilisateur authentifié.
+
+=== Acte 5 : Les requêtes sont exécutés côté serveur  : L'api/serveur (par ex) n'y voit que du feu !
+
+Les requêtes malveillantes sont maintenant exécutées côté serveur par le site légitime, car il les considère comme légitimes, et les actions non autorisées sont effectuées sans le consentement de l'utilisateur.
+
+
+== Comment se protéger des CSRF côté client ?
+
+Il y a trois choses à faire 
+
+=== 1) Tokens Anti-CSRF (jetons CSRF) : 
+
+Les sites web peuvent inclure des jetons anti-CSRF dans les formulaires ou les en-têtes de requête. 
+
+Comment ces jetons sont-ils générés ?
+
+
+=== Réponse :
+
+Ces jetons sont générés de manière aléatoire pour chaque session et chaque requête et sont vérifiés par le serveur pour s'assurer que la requête provient bien d'une page légitime du site.
+
+
+=== 2) SameSite Attribute : 
+
+Les cookies peuvent être configurés avec l'attribut SameSite pour contrôler leur comportement lors des requêtes transversales de site. 
+
+Comment est-ce que cela sert à se protéger des XSRF ?
+
+=== Réponse :
+
+En définissant l'attribut SameSite sur "Strict" ou "Lax", les cookies ne seront pas envoyés lors des requêtes initiées par des sites tiers, ce qui réduit le risque d'attaque XSRF.
+
+
+=== 3) Cookie avec l'attribut HttpOnly : 
+
+Les cookies sensibles (comme les cookies d'authentification) doivent être configurés avec l'attribut HttpOnly, ce qui les empêche d'être lus par du code JavaScript côté client, rendant ainsi plus difficile l'extraction des informations d'authentification par des attaquants.

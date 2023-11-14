@@ -1,0 +1,73 @@
+= Un Web Application Firewall (WAF) 
+
+== Définition
+
+Un WAF est un dispositif de sécurité conçu pour protéger les applications web contre diverses attaques en ligne, notamment:
+[%step]
+* les attaques par injection de code
+* les attaques par déni de service (DoS)
+* les tentatives d'exploitation de vulnérabilités
+* d'autres types d'attaques ciblant les applications web. 
+
+
+=== ...
+
+Un WAF agit en tant que pare-feu spécifiquement dédié à la couche d'application du modèle OSI, examinant le trafic HTTP/HTTPS entre un utilisateur et une application web.
+
+
+== Quelques points clés sur les Web Application Firewalls 
+
+== Filtrage du trafic HTTP/HTTPS 
+
+Un WAF surveille et filtre le trafic HTTP/HTTPS entre les utilisateurs et l'application web. 
+
+=== ...
+
+Il analyse les requêtes et les réponses pour détecter et bloquer les attaques potentielles au niveau de la couche d'application.
+
+== Protection contre les attaques par injection
+
+Les WAFs sont spécifiquement conçus pour détecter et prévenir les attaques par injection de code, telles que:
+[%step]
+* les attaques SQL Injection 
+* les attaques Cross-Site Scripting (XSS). 
+
+=== ...
+
+Ils examinent les données entrantes pour s'assurer qu'elles ne contiennent pas de code malveillant.
+
+== Contrôle d'accès et protection des sessions
+
+Un WAF peut:
+[%step]
+* mettre en œuvre des mécanismes de contrôle d'accès
+* vérifier les identités des utilisateurs
+* protéger les sessions utilisateur contre le vol de session.
+
+== Prévention contre les attaques par force brute
+
+Les WAFs peuvent surveiller les tentatives d'authentification et mettre en place des mécanismes pour prévenir les attaques par force brute.
+
+== Protection contre les vulnérabilités connues
+
+Certains WAFs sont capables de détecter et de bloquer les tentatives d'exploitation de vulnérabilités connues dans les applications web, même avant que des correctifs ne soient appliqués.
+
+== Journalisation et rapports 
+
+Les WAFs peuvent générer des journaux détaillés des événements de sécurité, ce qui est utile pour l'analyse des incidents et la génération de rapports de conformité.
+
+== Apprentissage automatique 
+
+Certains WAFs utilisent des techniques d'apprentissage automatique pour analyser le trafic et détecter les comportements anormaux, ce qui peut aider à identifier de nouvelles menaces.
+
+== Intégration avec d'autres solutions de sécurité 
+
+Les WAFs peuvent être intégrés à d'autres dispositifs de sécurité tels que:
+[%step]
+* les pare-feu réseau
+* les systèmes de prévention des intrusions (IPS)
+* les solutions de gestion des événements et des informations de sécurité (SIEM).
+
+== Bonne pratique
+
+L'utilisation d'un Web Application Firewall est une bonne pratique pour renforcer la sécurité des applications web, en particulier dans un contexte où les cyberattaques visent fréquemment les vulnérabilités au niveau de la couche d'application.

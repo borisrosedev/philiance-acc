@@ -1,0 +1,57 @@
+= Un Content Delivery Network
+
+== Définition
+Un Content Delivery Network (CDN), en français Réseau de diffusion de contenu, est un système de distribution de contenu conçu pour:
+[%step]
+* améliorer la performance
+* la disponibilité
+* la sécurité de la livraison de contenus sur Internet. 
+
+=== ...
+
+Il s'agit d'une infrastructure de serveurs répartis géographiquement qui travaille en collaboration pour fournir des contenus de manière plus efficace aux utilisateurs finaux, tels que :
+[%step]
+* des pages web
+* des images
+* des vidéos
+* d'autres fichiers multimédias 
+
+
+== Fonctionnement d'un CDN
+
+=== Répartition géographique
+
+Un CDN déploie ses serveurs dans divers emplacements géographiques, souvent appelés **"points de présence"** (PoPs), à travers le monde. Ces serveurs sont situés stratégiquement pour être plus proches des utilisateurs finaux.
+
+=== Copie de contenu
+
+Lorsqu'un utilisateur demande un certain contenu, le CDN crée des copies de ce contenu sur plusieurs serveurs répartis dans les PoPs. Ces copies sont généralement stockées en cache sur les serveurs du CDN.
+
+=== Routage intelligent
+
+Lorsqu'une demande de contenu est faite, le CDN utilise des algorithmes de routage intelligents pour déterminer le serveur optimal à partir duquel livrer le contenu. Le choix est souvent basé sur la proximité géographique, la disponibilité du serveur et d'autres facteurs.
+
+=== Livraison rapide
+
+En ayant des copies du contenu dans plusieurs endroits, le CDN réduit la distance physique entre le serveur et l'utilisateur final. Cela accélère le temps de chargement du contenu, améliorant ainsi l'expérience utilisateur.
+
+=== Réduction de la charge sur les serveurs d'origine
+
+En distribuant la charge sur plusieurs serveurs du CDN, la charge sur le serveur d'origine (le serveur où le contenu est initialement hébergé) est réduite, ce qui améliore la disponibilité et la stabilité du site.
+
+=== Sécurité :
+
+Certains CDN offrent également des fonctionnalités de sécurité, telles que la protection contre les attaques DDoS (Distributed Denial of Service) et la sécurisation des données transitant entre le serveur d'origine et les utilisateurs.
+
+
+== En résumé
+
+En résumé, un CDN optimise la livraison de contenu sur Internet:
+[%step]
+* en réduisant la latence
+* en améliorant la disponibilité
+* en offrant des fonctionnalités de sécurité
+
+=== ...
+
+Le tout contribue à améliorer l'expérience utilisateur et l'efficacité des sites web et des applications en ligne.

@@ -1,0 +1,97 @@
+= OWASP TOP 10
+
+== Broken Access Control (2021 N°1)
+
+=== Contexte
+
+**La mauvaise gestion des contrôles d'accès** monte de la cinquième position à la première; 
+
+94 % des applications ont été testées pour une forme quelconque de mauvaise gestion des contrôles d'accès. 
+
+Les 34 Common Weakness Enumerations (CWE) associées à la mauvaise gestion des contrôles d'accès ont eu plus d'occurrences dans les applications que toute autre catégorie.
+
+=== Exemples de faiblesses
+
+En général, les faiblesses de sécurité associées à la mauvaise gestion des contrôles d'accès peuvent inclure des problèmes tels que :
+
+=== Privilèges excessifs ou insuffisants 
+
+Les utilisateurs peuvent se voir attribuer des droits d'accès inappropriés, ce qui peut conduire à des problèmes de sécurité si un utilisateur a accès à des fonctionnalités ou à des données auxquelles il ne devrait pas avoir accès, ou s'il n'a pas suffisamment de privilèges pour effectuer des tâches nécessaires.
+
+=== Mauvaise gestion des sessions 
+
+Les mécanismes de gestion des sessions peuvent être vulnérables, permettant à un utilisateur malveillant de prendre le contrôle d'une session valide.
+
+=== Défauts dans la gestion des rôles 
+
+Les systèmes qui dépendent de la gestion des rôles pour contrôler l'accès peuvent présenter des faiblesses si les rôles ne sont pas correctement définis, attribués ou vérifiés.
+
+=== Contournement des mécanismes de contrôle d'accès 
+
+Certains mécanismes de contrôle d'accès peuvent être contournés si des vérifications adéquates ne sont pas effectuées, permettant à un attaquant de contourner les restrictions d'accès.
+
+=== En savoir plus
+
+link:./bac.html[En savoir plus sur le BAC (html)]
+link:./bac.adoc[En savoir plus sur le BAC (adoc)]
+
+
+
+== Cryptographic Failures (2021 n°2)
+
+**Les échecs cryptographiques** montent d'une position pour occuper la deuxième place, précédemment connus sous le nom d'exposition de données sensibles, qui était un symptôme large plutôt qu'une cause fondamentale. L'accent renouvelé ici porte sur les échecs liés à la cryptographie qui conduisent souvent à l'exposition de données sensibles ou à la compromission du système.
+
+
+
+== Injection (2021 n°3)
+
+**L'injection** glisse à la troisième position. 94 % des applications ont été testées pour une forme quelconque d'injection, et les 33 CWE associées à cette catégorie ont la deuxième occurrence la plus élevée dans les applications. La faille de script intersite fait désormais partie de cette catégorie dans cette édition.
+
+
+== Insecure Design (2021 n°4)
+
+**La conception non sécurisée** est une nouvelle catégorie pour 2021, axée sur les risques liés aux défauts de conception. Prendre en considération cette vulnérabilité nécessite une utilisation accrue de la modélisation des menaces, des modèles et principes de conception sécurisés, ainsi que des architectures de référence.
+
+== Security Misconfiguration (2021 n°5)
+
+**La mauvaise configuration de la sécurité** monte de la 6e place dans l'édition précédente ; 
+
+90 % des applications ont été testées pour une forme quelconque de mauvaise configuration. 
+
+Avec de plus en plus de logiciels hautement configurables, il n'est pas surprenant de voir cette catégorie monter. 
+
+L'ancienne catégorie pour les entités externes XML (XXE) fait désormais partie de cette catégorie.
+
+== Vulnerable and Outdated Components
+
+**Composants vulnérables et obsolètes** était précédemment intitulée 'Utilisation de composants présentant des vulnérabilités connues' et est classée n°2 dans l'enquête communautaire Top 10, mais a également généré suffisamment de données pour figurer dans le Top 10 par analyse des données. 
+
+Cette catégorie monte de la 9e place en 2017 et est un problème connu que nous avons du mal à tester et dont les risques sont durs à évaluer. 
+
+== Identification and Authentication Failure
+
+**Échecs de l'identification et de l'authentification** était précédemment une authentification défaillante et descend de la deuxième position, incluant maintenant des CWE plus liées aux échecs d'identification. 
+
+=== Les cadres normalisés
+
+Cette catégorie reste une partie intégrante du Top 10, mais la disponibilité accrue de cadres normalisés semble aider.
+
+== Software and Data Integrity Failures (2021 n°8)
+
+**Échecs de l'intégrité des logiciels et des données** est une nouvelle catégorie pour 2021, mettant l'accent sur les hypothèses liées aux mises à jour logicielles, aux données critiques et aux pipelines CI/CD sans vérification d'intégrité. 
+
+=== 10 CWE
+
+L'un des impacts les plus importants pondérés par les données des Common Vulnerability and Exposures/Common Vulnerability Scoring System (CVE/CVSS) est associé aux 10 CWE de cette catégorie. 
+
+=== La désérialisation non sécurisée
+
+La désérialisation non sécurisée de 2017 fait maintenant partie de cette catégorie plus large.
+
+
+== Security Logging and Monitoring Failures (2021 n°9)
+
+Échecs de la journalisation et de la surveillance de la sécurité étaient précédemment une journalisation et une surveillance insuffisantes et sont ajoutées à partir de l'enquête industrielle (n°3), passant de la 10e place précédemment. Cette catégorie est étendue pour inclure plus de types d'échecs, elle est difficile à tester et n'est pas bien représentée dans les données CVE/CVSS. Cependant, les échecs de cette catégorie peuvent avoir un impact direct sur la visibilité, l'alerte d'incident et la criminalistique.
+
+
+== Server Side Request Forgery (2021 n°10)

@@ -1,0 +1,62 @@
+= Un "rolling code" 
+
+== Définition
+
+Un "rolling code"(code tournant en français) est une technique de sécurité utilisée dans les systèmes d'accès sans fil, tels que :
+
+[%step]
+* les télécommandes de garage
+* les systèmes d'alarme de voiture 
+* les systèmes de contrôle d'accès. 
+
+=== ...
+
+L'objectif principal du rolling code est de renforcer la sécurité en évitant la répétition constante du même code fixe, ce qui rendrait plus difficile pour des personnes non autorisées de reproduire ou de copier le signal.
+
+== Fonctionnement
+
+== Code initial
+
+Lorsqu'une télécommande est appairée avec un récepteur (par exemple, un ouvre-porte de garage), un code initial est partagé entre la télécommande et le récepteur. 
+
+=== ...
+
+Ce code initial est utilisé pour établir une communication sécurisée entre les deux.
+
+== Séquence de codes 
+
+Chaque fois que la télécommande est utilisée, elle envoie un code unique qui fait partie d'une séquence préétablie de codes.
+
+=== ...
+
+Ce code unique est généré à partir du code initial et est différent à chaque utilisation.
+
+== Synchronisation 
+
+Le récepteur et la télécommande sont synchronisés pour suivre la séquence de codes. À chaque utilisation réussie, la séquence est mise à jour pour le prochain code.
+
+== Temps limité 
+
+Les codes ont une durée de validité limitée dans le temps. 
+
+=== ...
+
+Cela signifie que même si un code est intercepté, il ne peut pas être réutilisé après un certain laps de temps, rendant plus difficile la reproduction du signal.
+
+
+== Piratages difficiles
+
+Cette technique de rolling code rend plus difficile la tâche des pirates qui tentent de capturer et de reproduire les signaux pour accéder de manière non autorisée à un système sécurisé. 
+
+
+=== ...
+
+Même si un attaquant parvient à intercepter un code spécifique, ce code ne fonctionnera que pour une courte période, et les codes suivants seront différents.
+
+=== ...
+
+Il est important de noter que la sécurité totale dépend également d'autres facteurs tels que: 
+[%step]
+* la robustesse de la mise en œuvre du rolling code
+* la protection contre la capture radio fréquente
+* d'autres méthodes de sécurité intégrées dans le système global.

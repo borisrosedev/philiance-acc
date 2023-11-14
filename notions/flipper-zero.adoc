@@ -1,0 +1,50 @@
+= Le Flipper Zero 
+
+== Définition
+
+Le Flipper Zero est un dispositif électronique multifonctionnel conçu pour les amateurs de sécurité informatique, de hacking éthique et de jeux rétro. 
+
+
+== Quelques-unes de ses caractéristiques et fonctionnalités notables
+
+== Outil de Hacking 
+
+Le Flipper Zero est équipé de fonctionnalités de sécurité informatique, telles que :
+[%step]
+* le sniffing RFID
+* le décodage de codes infrarouges
+* le clonage de cartes RFID
+* etc. 
+
+=== ...
+
+Cela en fait un outil utile pour les professionnels de la sécurité et les amateurs de hacking éthique.
+
+== Contrôleur de Jeux Rétro 
+
+Il peut être utilisé comme un contrôleur de jeux pour les émulateurs de consoles de jeux rétro, offrant ainsi une expérience de jeu nostalgique.
+
+== Radio Émetteur/Récepteur 
+
+Le Flipper Zero est équipé de modules radio pour interagir avec divers dispositifs, comme :
+[%step]
+* les fréquences radio courtes
+* les signaux infrarouges
+* etc.
+
+== Écran et Clavier
+
+Il dispose d'un petit écran et d'un clavier permettant d'interagir avec les différentes fonctionnalités et de naviguer dans les menus.
+
+== Émulation de Cartes RFID 
+
+Le Flipper Zero peut émuler des cartes RFID, ce qui peut être utile pour tester la sécurité des systèmes d'accès utilisant ces cartes.
+
+== Connectivité USB 
+
+Il est doté d'une connectivité USB, ce qui lui permet d'être utilisé comme un dispositif USB programmable.
+
+== Communauté et Open Source 
+
+Le Flipper Zero a une communauté active et est conçu pour être open source, ce qui signifie que ses utilisateurs peuvent accéder au code source et même contribuer à son développement.
+

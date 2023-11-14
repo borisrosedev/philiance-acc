@@ -1,0 +1,71 @@
+= L'injection SQL 
+
+== Définition
+
+L'injection SQL est une technique d'attaque courante dans laquelle un attaquant insère du code SQL malveillant dans des requêtes SQL afin de manipuler la base de données sous-jacente. 
+
+
+=== ...
+
+Cette attaque exploite souvent des failles de sécurité dans des applications web qui ne valident pas correctement les entrées de l'utilisateur avant de les incorporer dans des requêtes SQL. 
+
+
+=== ...
+
+L'injection SQL peut avoir des conséquences graves, notamment:
+[%step]
+* la divulgation non autorisée d'informations
+* la modification de données
+* la suppression de données.
+
+
+== Exemple 
+
+Voici un exemple simplifié pour illustrer comment fonctionne une injection SQL :
+
+=== Contexte
+
+Supposons qu'une application web utilise une requête SQL pour authentifier les utilisateurs lors de la connexion :
+
+[source, sql]
+----
+SELECT * FROM utilisateurs WHERE nom_utilisateur = 'nom' AND mot_de_passe = 'mot_de_passe';
+----
+
+=== ...
+
+Si l'application ne filtre pas correctement les entrées utilisateur et qu'un attaquant entre le nom d'utilisateur suivant comme entrée :
+
+[source, sql]
+----
+' OR '1'='1'; --
+----
+
+La requête SQL modifiée ressemblera à ceci :
+
+[source, sql]
+----
+SELECT * FROM utilisateurs WHERE nom_utilisateur = '' OR '1'='1'; --' AND mot_de_passe = 'mot_de_passe';
+----
+
+=== ...
+
+Dans cette situation, la condition '1'='1' est toujours vraie, ce qui signifie que la requête retournera des résultats, permettant à l'attaquant de contourner l'authentification et de se connecter en tant que n'importe quel utilisateur.
+
+
+== Prévention
+
+
+Pour prévenir les attaques par injection SQL, les développeurs doivent mettre en œuvre des pratiques de sécurité telles que:
+[%step]
+* la validation des entrées utilisateur
+* l'utilisation de requêtes préparées
+* l'encodage des données avant de les incorporer dans des requêtes SQL
+
+=== ...
+
+* Les pare-feu d'application web (WAF) et d'autres dispositifs de sécurité peuvent également aider à détecter et à bloquer les tentatives d'injection SQL.
+
+=== veille
+
+Il est essentiel de rester informé sur les meilleures pratiques de sécurité pour éviter ces types d'attaques.

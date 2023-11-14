@@ -1,0 +1,43 @@
+= Active Directy et domaines
+
+== Explication
+
+Active Directory organise les ressources réseau en domaines signifie que Active Directory utilise une structure hiérarchique appelée domaine pour organiser et gérer les ressources sur un réseau. 
+
+
+== Définition
+
+Un domaine Active Directory est une unité d'organisation logique qui regroupe un ensemble d'objets, tels que des utilisateurs, des ordinateurs, des groupes et d'autres ressources, ainsi que des politiques de sécurité et des relations de confiance.
+
+
+== Quelques points clés à propos des domaines dans Active Directory :
+
+
+=== Isolation logique 
+
+Les domaines permettent une isolation logique des objets et des ressources. 
+
+Chaque domaine peut avoir sa propre base de données Active Directory distincte tout en étant capable d'établir des relations de confiance avec d'autres domaines.
+
+=== Gestion centralisée
+
+Un domaine permet la gestion centralisée des utilisateurs, des groupes et des ressources. 
+
+Les administrateurs peuvent définir des politiques de sécurité, des stratégies de groupe et d'autres paramètres qui s'appliquent à tous les objets du domaine.
+
+=== Relation de confiance
+
+Les domaines peuvent établir des relations de confiance entre eux, permettant aux utilisateurs d'accéder à des ressources dans d'autres domaines sans avoir à créer de comptes distincts. Cela simplifie la gestion des accès à travers le réseau.
+
+=== Structure hiérarchique
+
+Les domaines peuvent être organisés en une structure hiérarchique. 
+
+Par exemple, plusieurs domaines peuvent être regroupés dans une structure appelée arborescence de domaines. 
+
+Cette arborescence peut ensuite être regroupée en une structure plus vaste appelée forêt.
+
+
+== En résumé
+
+En résumé, l'utilisation de domaines dans Active Directory permet une gestion efficace et organisée des ressources sur un réseau Windows, offrant à la fois la sécurité, la centralisation de la gestion et la possibilité d'établir des relations de confiance entre différentes parties du réseau.

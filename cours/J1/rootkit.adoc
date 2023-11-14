@@ -1,0 +1,38 @@
+= Rootkit
+
+== Définition d'un Rootkit
+
+Les rootkits sont des programmes (ou un ensemble de programmes) qui installent et exécutent un code sur un système à l'insu de l'utilisateur et sans son autorisation. 
+
+=== Camouflage 
+
+Ils utilisent une technique de camouflage pour maintenir une présence persistante et indétectable sur la machine. 
+
+=== Aucun infection
+
+Les rootkits n'infectent pas les machines. 
+
+=== Exécution d'un code malveillant
+
+Ils cherchent plutôt à fournir un environnement indétectable afin d'exécuter un code malveillant. 
+
+=== Mais commment le rootkit arrive-t-il sur le système ?
+
+Les rootkits sont installés sur les systèmes :
+
+* via un piratage psychologique
+* lors de l'exécution de programmes malveillants 
+* simplement en naviguant sur un site Web malveillant. 
+
+=== Les conséquences de l'installation du rootkit 
+
+Une fois installé, un pirate peut pratiquement effectuer n'importe quelle action sur le système, notamment :
+[%step]
+* l'accès à distance 
+* l'espionnage
+* masquer :
+[%step]
+* - des processus
+* - des fichiers
+* - des clés de registre 
+* - des canaux de communication.

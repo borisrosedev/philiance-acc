@@ -1,0 +1,47 @@
+= Le terme "coût d'itération" 
+
+
+== Définition
+
+Le terme "coût d'itération" (ou "nombre d'itérations") dans le contexte des fonctions de dérivation de clé (KDF) fait référence au nombre de fois où une opération spécifique est répétée lors du processus de dérivation de clé à partir d'un mot de passe. 
+
+=== ...
+
+En d'autres termes, c'est le nombre d'itérations de calcul qu'une KDF effectue pour générer la clé dérivée.
+
+
+== Conséquence
+
+Un coût d'itération élevé signifie qu'un plus grand nombre d'opérations itératives est effectué, ce qui rend le processus plus lent et plus intensif en ressources. 
+
+
+Cette lenteur est délibérée et vise à rendre les attaques par force brute plus difficiles en augmentant le temps nécessaire pour tester chaque tentative.
+
+
+== Résistance aux attaques par force brute
+
+La raison pour laquelle le coût d'itération est important réside dans la résistance aux attaques par force brute. 
+
+=== Concrètement
+
+Lorsqu'un attaquant tente de deviner un mot de passe en essayant différentes combinaisons, chaque tentative nécessite l'application de la fonction de dérivation de clé. 
+
+=== Coût en ressources
+
+Si le coût d'itération est élevé, chaque tentative prendra plus de temps, rendant l'attaque par force brute beaucoup plus coûteuse en termes de temps et de ressources.
+
+== Toutefois 
+Cependant, il est crucial de trouver un équilibre entre le coût d'itération et la performance, car un coût trop élevé peut également ralentir de manière significative les opérations légitimes, telles que l'authentification des utilisateurs. 
+
+=== Exigences spécifiques
+
+Le choix du bon paramètre de coût d'itération dépend des exigences spécifiques de sécurité de l'application et des performances acceptables. 
+
+
+=== KDF modernes
+
+Les KDF modernes permettent souvent de régler ce paramètre en fonction des besoins spécifiques du système.
+
+
+
+

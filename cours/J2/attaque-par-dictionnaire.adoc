@@ -1,0 +1,36 @@
+= Attaque par Dictionnaire
+
+== Définition
+
+Une attaque par dictionnaire est une approche plus ciblée que l'attaque par force brute. 
+
+
+=== Dictionnaire
+
+Au lieu de tester toutes les combinaisons possibles, l'attaquant utilise un "dictionnaire" contenant une liste de mots couramment utilisés, de phrases, ou de combinaisons susceptibles d'être des mots de passe. 
+
+L'attaquant teste ensuite chaque entrée du dictionnaire contre le système cible.
+
+
+=== Efficacité 
+
+L'efficacité de cette méthode dépend largement de la qualité du dictionnaire utilisé et de la manière dont les utilisateurs choisissent leurs mots de passe. 
+
+=== Plus rapides
+
+Les attaques par dictionnaire sont souvent plus rapides que les attaques par force brute, car elles ciblent des mots de passe potentiels plus probables en premier.
+
+== Mesures de Protection 
+
+Pour se protéger contre ces types d'attaques, il est courant d'utiliser des pratiques telles que :
+[%step]
+* l'utilisation de mots de passe forts (combinant lettres, chiffres, et caractères spéciaux), 
+* la mise en œuvre de politiques de verrouillage du compte après un certain nombre de tentatives infructueuses
+
+=== ...
+[%step]
+* l'utilisation de fonctions de dérivation de clé telles que les KDFs pour ralentir les attaques par force brute. 
+
+=== ...
+De plus, l'ajout d'un sel dans le processus de dérivation de clé contribue également à rendre les attaques par dictionnaire plus difficiles, car un même mot de passe donnera des résultats différents en fonction du sel utilisé.
+

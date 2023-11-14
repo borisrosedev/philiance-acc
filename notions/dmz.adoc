@@ -1,0 +1,51 @@
+= DMZ 
+
+== Définition
+
+DMZ (Zone Démilitarisée) fait référence à une zone intermédiaire située entre le réseau interne privé d'une organisation (généralement son réseau local ou LAN) et le réseau externe public (Internet). 
+
+
+=== Hébergeur de services
+
+La DMZ est souvent utilisée pour héberger des services accessibles depuis Internet tout en isolant ces services du réseau interne, afin de renforcer la sécurité globale.
+
+
+== Quelques caractéristiques et fonctions courantes d'une DMZ:
+
+== Hébergement de services publics
+
+Les services qui sont destinés à être accessibles depuis Internet, tels que les serveurs web, les serveurs de messagerie, les serveurs DNS (Domain Name System), etc., sont généralement déployés dans la DMZ.
+
+== Isolation 
+
+La DMZ agit comme une zone tampon entre le réseau interne et externe. Elle aide à isoler les serveurs hébergeant des services publics des systèmes internes sensibles, réduisant ainsi la surface d'attaque potentielle.
+
+== Firewall
+
+Des pare-feu (firewalls) sont généralement utilisés pour contrôler le trafic entre la DMZ et le réseau interne, ainsi qu'entre la DMZ et Internet. Cela permet de définir des règles de sécurité pour réguler quel type de trafic est autorisé à passer à travers la DMZ.
+
+== Double pare-feu 
+
+Certains déploiements utilisent un double pare-feu, c'est-à-dire un pare-feu entre le réseau interne et la DMZ, et un autre entre la DMZ et Internet. Cela renforce la sécurité en ajoutant une couche supplémentaire de protection.
+
+== Serveurs intermédiaires 
+
+Des serveurs intermédiaires, tels que les serveurs proxy, peuvent être déployés dans la DMZ pour interagir avec Internet au nom des serveurs internes. 
+
+Cela peut améliorer la sécurité en masquant la topologie interne du réseau.
+
+== Surveillance 
+
+Étant donné que la DMZ héberge des services accessibles depuis l'extérieur, elle est souvent soumise à une surveillance étroite pour détecter toute activité suspecte ou tentative d'intrusion.
+
+== En résumé
+
+En résumé, la DMZ  est une composante essentielle de la stratégie de sécurité pour les organisations qui fournissent des services en ligne. 
+
+=== ...
+
+Elle permet de rendre certains services accessibles depuis Internet tout en minimisant les risques potentiels pour le réseau interne. 
+
+=== ...
+
+La configuration exacte d'une DMZ peut varier en fonction des besoins spécifiques de sécurité de l'organisation.

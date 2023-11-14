@@ -1,0 +1,46 @@
+= Active Directory (AD) 
+
+
+== Définition
+
+Active Directory est un **service de répertoire** développé par Microsoft pour les **réseaux de domaines Windows**. 
+
+
+== Windows Server
+
+Il est inclus dans la plupart des systèmes d'exploitation Windows Server sous la forme d'un ensemble de processus et de services. 
+
+== système centralisé et normalisé
+
+Active Directory fournit un système centralisé et normalisé qui automatise la gestion du réseau, des données utilisateur, de la sécurité et des ressources distribuées. 
+
+
+
+== Services d'annuaire 
+
+Active Directory stocke des informations sur les objets du réseau et rend ces informations disponibles aux utilisateurs et aux administrateurs réseau. 
+
+Il utilise un magasin de données structuré comme base pour une organisation logique et hiérarchique des informations d'annuaire.
+
+== Gestion des utilisateurs 
+
+Active Directory permet la gestion centralisée des utilisateurs, des groupes et des ordinateurs sur le réseau. 
+
+Les administrateurs peuvent définir des stratégies de sécurité, attribuer des autorisations et simplifier la gestion des comptes utilisateur.
+
+== Authentification et autorisation 
+
+Active Directory gère l'authentification des utilisateurs lors de leur connexion au réseau. 
+
+
+Il gère également l'autorisation en déterminant les ressources et les opérations auxquelles un utilisateur ou un groupe d'utilisateurs a accès.
+
+== Services de domaine 
+
+Active Directory organise les ressources réseau **en domaines** et fournit des services tels que l'authentification et l'autorisation à l'échelle du domaine.
+
+
+== Services complémentaires 
+
+Active Directory offre une gamme de services complémentaires tels que la gestion des politiques de groupe, la gestion des certificats, la recherche globale d'objets, etc.
+

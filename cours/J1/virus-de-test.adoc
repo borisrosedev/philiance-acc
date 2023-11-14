@@ -1,0 +1,19 @@
+== Les virus de test
+
+Les virus de test sont des fichiers inertes qui agissent comme un véritable virus et qui peuvent être détectés par les logiciels antivirus. Utilisez des virus de test, tels que le script de test EICAR, pour vérifier que le scan de votre installation antivirus fonctionne correctement.
+
+=== Qu'est-ce que le script de test EICAR ?
+
+L'EICAR (European Institute for Computer Antivirus Research) a développé un fichier de test standardisé qui est utilisé pour tester la réactivité des logiciels antivirus sans recourir à de véritables logiciels malveillants. 
+
+=== ...
+
+Ce fichier de test, souvent appelé le "fichier de test EICAR," ne réalise aucune action malveillante réelle, mais il génère une signature spécifique qui est reconnue par la plupart des programmes antivirus.
+
+=== utilisation 
+
+Lorsque vous utilisez ce fichier, assurez-vous de ne pas l'exécuter, mais plutôt de le scanner avec votre logiciel antivirus. 
+
+=== menace potentielle
+
+La plupart des antivirus devraient le détecter comme une menace potentielle en raison de sa signature spécifique, confirmant ainsi que votre logiciel antivirus est en mesure de détecter les menaces connues.

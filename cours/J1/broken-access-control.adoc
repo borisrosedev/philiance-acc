@@ -103,7 +103,16 @@ En d'autres termes, les règles et les contraintes liées à l'activité commerc
 
 === Conséquences
 
-En faisant cela, l'application est mieux alignée sur les besoins spécifiques de l'entreprise ou de l'industrie qu'elle sert. Cela peut conduire à une application plus efficace, adaptable aux changements commerciaux et conforme aux exigences spécifiques du secteur. C'est une pratique recommandée dans le développement de logiciels orientés métier.
+En faisant cela, l'application est mieux alignée sur les besoins spécifiques de l'entreprise ou de l'industrie qu'elle sert. 
+
+===....
+
+Cela peut conduire à une application plus efficace, adaptable aux changements commerciaux et conforme aux exigences spécifiques du secteur. 
+
+
+===...
+
+C'est une pratique recommandée dans le développement de logiciels orientés métier.
 
 === Désactiver la liste de répertoires du service web
 
