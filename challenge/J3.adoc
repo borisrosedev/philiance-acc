@@ -74,7 +74,7 @@ Chris prend la parole : Chat-GPT : on est parti dans l'explorateur de fichiers. 
 On a essayé de chercher une autre technique avec les extensions (Hugo Like)
 
 Sami prend la parole: J'avais une idée initiale concernant OpenDSN: cela permet de configurer les paramètres DNS.
-Je me suis connecté sur le site. J'ai choisi 
+Je me suis connecté sur le site. J'ai choisi.
 
 
 
