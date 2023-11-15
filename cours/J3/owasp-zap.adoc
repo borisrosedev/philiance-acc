@@ -1,0 +1,54 @@
+= OWASP ZAP (Zed Attack Proxy) 
+
+
+== Définition
+
+OWASP ZAP (Zed Attack Proxy)  est un outil open source de test de sécurité des applications web. 
+
+==  OWASP ZAP
+
+Voici les étapes de base pour utiliser OWASP ZAP :
+
+== Installation 
+
+Tout d'abord, assurez-vous d'avoir téléchargé et installé OWASP ZAP sur votre système. Vous pouvez le trouver sur le site officiel d'OWASP.
+
+== Lancement de ZAP 
+
+Après l'installation, lancez l'application.
+
+== Configuration du Navigateur 
+
+Configurez votre navigateur web pour utiliser ZAP comme proxy. 
+
+Allez dans les paramètres réseau de votre navigateur et configurez le proxy pour qu'il utilise l'adresse IP et le port sur lesquels ZAP écoute (par défaut, l'adresse IP est généralement localhost et le port 8080).
+
+
+== Démarrage du Scan 
+
+Avec ZAP en cours d'exécution et votre navigateur configuré pour utiliser le proxy, visitez le site que vous souhaitez analyser. ZAP interceptera le trafic entre votre navigateur et le site.
+
+== Exploration de l'application 
+
+Utilisez ZAP pour explorer l'application. Vous pouvez naviguer à travers les différentes fonctionnalités de l'application pour permettre à ZAP de découvrir autant de pages que possible.
+
+== Lancement des Scans Actifs 
+
+ZAP propose des fonctionnalités de scan actif qui analysent automatiquement les vulnérabilités. Allez dans l'onglet "Scan" et configurez les options selon vos besoins, puis lancez le scan actif.
+
+== Analyse des Résultats 
+
+Une fois le scan terminé, explorez les résultats pour identifier les vulnérabilités potentielles. ZAP fournira des informations détaillées sur les vulnérabilités détectées.
+
+== Génération de Rapports 
+
+Vous pouvez générer des rapports détaillés sur les résultats du scan pour les partager avec d'autres parties prenantes.
+
+== Corrections 
+
+Si des vulnérabilités sont détectées, travaillez à les corriger avant qu'elles ne puissent être exploitées.
+
+== Configuration Avancée 
+
+Pour des tests plus avancés, explorez les nombreuses fonctionnalités avancées de ZAP, telles que la configuration des politiques de scan, l'utilisation de scripts, etc.
+

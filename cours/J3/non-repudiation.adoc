@@ -1,0 +1,54 @@
+= La non-répudiation 
+
+
+== Concept informatique et juridique
+
+La non-répudiation est un concept de sécurité informatique et juridique qui vise à garantir qu'une personne ou une entité ne peut pas nier l'authenticité d'une action, d'une transaction ou d'un message qu'elle a réalisé ou signé. 
+
+
+=== Autrement dit 
+
+En d'autres termes, elle empêche une personne de prétendre qu'elle n'a pas effectué une action ou qu'elle n'a pas envoyé un message alors qu'il existe des preuves irréfutables de sa participation.
+
+=== Importante
+
+La non-répudiation est particulièrement importante dans les domaines où la preuve de l'origine ou de l'intégrité d'une action ou d'une communication est essentielle. 
+
+
+== Exemples de domaines où la non-répudiation est cruciale
+
+
+=== Signature électronique 
+
+Lorsqu'une personne signe électroniquement un contrat ou un document, la non-répudiation garantit que la personne ne peut pas nier avoir signé le document en question.
+
+=== Transactions financières 
+
+Dans le domaine des transactions bancaires en ligne, la non-répudiation est utilisée pour s'assurer que les utilisateurs ne peuvent pas contester des transactions qu'ils ont autorisées.
+
+=== Messagerie électronique 
+
+La non-répudiation dans les e-mails garantit que l'expéditeur ne peut pas nier avoir envoyé un message, ce qui peut être important dans des contextes juridiques ou commerciaux.
+
+== Enregistrements de journaux (logs) 
+
+Les systèmes informatiques conservent souvent des journaux d'activités pour enregistrer les actions des utilisateurs et des administrateurs. 
+
+=== La non-répudiation des journaux
+
+La non-répudiation des journaux garantit que les entrées ne peuvent pas être contestées ou niées.
+
+=== Procédé
+
+Pour mettre en œuvre la non-répudiation, on utilise généralement des techniques de sécurité telles que :
+
+=== Techniques de sécurité
+
+[%step]
+*  la cryptographie à clé publique (qui permet de signer électroniquement des documents), * l'horodatage
+* l'archivage sécurisé des preuves électroniques
+* des procédures de gestion des clés et d'audit strictes. 
+
+=== Intégrité 
+
+La non-répudiation joue un rôle essentiel dans le maintien de la confiance et de l'intégrité des transactions et des communications électroniques, en particulier dans le monde numérique où la dénégation peut être facilement tentée en l'absence de preuves tangibles.

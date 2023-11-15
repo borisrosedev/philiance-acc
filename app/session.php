@@ -20,6 +20,29 @@ require './php/controllers/product.php';
     ?>
     <main class="session-page">
 
+        <h2> Your information </h2>
+        <section class="user-infos">
+            <?php 
+                if(isset($_SESSION['user']) && $_SESSION['user']['id']){
+                    ?>
+                    <article class="user-info">
+                        <p><?= $_SESSION['user']['firstname'] ? $_SESSION['user']['firstname'] : 'Inconnu'; ?></p>
+                    </article>
+                    <article class="user-info">
+                        <p><?= $_SESSION['user']['firstname'] ? $_SESSION['user']['lastname'] : 'Inconnu'; ?></p>
+                    </article>
+                    <article class="user-info">
+                        <p><?= $_SESSION['user']['email'] ?></p>
+                    </article>
+                    <article class="user-info">
+                        <p><?= $_SESSION['user']['password'] ?></p>
+                    </article>
+                    <?php
+                }
+            ?>
+        </section>
+
+        <h2> Your products </h2>
         <section class="user-products">
         <?php
 

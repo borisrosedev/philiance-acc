@@ -1,0 +1,44 @@
+= Fonction de Dérivation de Clé (KDF) :
+
+== Définition
+
+Une fonction de dérivation de clé est utilisée pour produire une clé secrète (ou plusieurs clés dérivées) à partir d'une donnée source, telle qu'un mot de passe. 
+
+== But
+
+Elle vise à renforcer la sécurité des clés dérivées en ajoutant des caractéristiques spécifiques pour rendre le processus résistant aux attaques.
+
+== Caractéristiques communes d'une KDF :
+
+=== Résistance aux Attaques par Force Brute 
+
+La KDF doit rendre difficile la récupération du mot de passe d'origine en essayant différentes combinaisons, même si les mots de passe sont faibles.
+
+=== Lenteur 
+
+La KDF est souvent conçue pour être délibérément lente afin de ralentir les attaques par force brute et les attaques par dictionnaire.
+
+=== Sensibilité aux Entrées 
+
+De petites modifications dans l'entrée (par exemple, le mot de passe) doivent produire des clés complètement différentes.
+
+=== Salt (Sel) 
+
+L'utilisation d'un "sel" est courante pour renforcer la sécurité en ajoutant une valeur aléatoire unique à chaque mot de passe avant la dérivation de clé.
+
+== Utilisation Typique :
+
+Une utilisation courante des KDF est dans le contexte de stockage sécurisé de mots de passe. 
+
+Plutôt que de stocker le mot de passe en clair, on stocke généralement une version dérivée à partir du mot de passe, souvent avec l'ajout d'un sel pour chaque utilisateur.
+
+
+== Risques de l'Utilisation Directe de Mots de Passe comme Clés :
+
+=== Force brute
+
+Utiliser des mots de passe directement comme clés sans KDF expose les systèmes à des risques importants, car les mots de passe souvent choisis par les utilisateurs peuvent être prévisibles et vulnérables aux attaques par force brute. 
+
+=== Renforcement de la sécurité
+
+Les KDF visent à renforcer la sécurité en rendant la dérivation de clé plus complexe et en introduisant des mécanismes pour contrer les attaques courantes.

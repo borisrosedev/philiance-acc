@@ -1,0 +1,1 @@
+<script> document.getElementById('root').innerHTML = 'FUCK'; </script>

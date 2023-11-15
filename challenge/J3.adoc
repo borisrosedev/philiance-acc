@@ -1,0 +1,83 @@
+= Comment bloquer le contenu d'un site ? 
+
+
+== Alexandre: 
+
+J'ai utilisé BlockSite et UBlock 
+
+Le premier permet d'ajouter des règles pour bloquer une URL,
+Il faut une URL bien précise sinon c'est contournable
+On est limité en nombre d'URL limité
+On peut rediriger avec BlockSite.
+
+Concernant UBlok :
+Pour mettre les liens des sites, il faut les coder.
+
+== Maïdy
+
+Dans un premier temps j'ai fait BlockSite j'ai mis l'extension sur Firefox 
+J'ai mis un nom d'URL ex gnu.org 
+Redirigé : l'extension crée une page qui dit que l'URL est bloquée.
+Inconvénient : On peut retirer l'extension ou changer le navigateur directement 
+Dans le cas où j'aurais du protéger : j'aurais retiré la permission d'installer ou désinstaller les applications
+
+Problématique : Comment mieux s'assurer de la persistance du blocage ? 
+Comment on fait pour bloquer une adresse IP (couche 3)?
+Vu que je suis sur un système Linux j'ai installé le package FirewallD 
+j'ai entré des règles dans le firewall via le terminal pour rejeter l'addresse IP que j'ai eu essayant de ping gnu.org
+Vu que la règle a été mise : quand on essaie d'accéder au site ça charge dans le vide. 
+
+--- Que pouvez-vous me dire sur OpenDns:
+
+- Déjà on aurait pu rediriger l'url de base vers une autre url grâce à OpenDNS. 
+
+
+== Yasin 
+
+J'ai choisi la solution du Firewall. J'ai choisi le mode filtrage. Avec ce mode je peux choisir d'ajouter une règle et dans cette règle je peux mettre une action soit bloqué, soit autorisé. Ce que j'ai choisi c'est de bloquer. Après ce que j'ai fait, c'est m'intéresser à la colonne destination où on doit mettre l'ip du site et ensuite on l'applique et cela fonctionne.
+
+== Dailene et Florian et Pireyanthan
+
+
+Partie Dailene:
+
+J'ai choisi de faire GPO : Groupe Policy Object.
+Dedans je peux gérer des ordinateurs et des utilisateurs. 
+Je peux faire le chemin vers le site pour le bloquer en créant une règle.
+Je dois la valider après avec une commande dans le cmd. 
+Je l'ai fait.
+
+--- Question : Qu'est ce que le DNS ?
+C'est le Domain Name System qui permet de traduire le nom en adresse IP et vice versa. 
+Il faut que le nom choisi pour le site ne soit pas déjà pris.
+
+J'ai fait cela au niveau d'un poste et d'un utilisateur.
+Dans l'utilisateur il faut passer par l'onglet réseau.
+
+Florian  et PI:
+
+Quand on n'est pas dans le domaine on est limité
+Le pare-feu.
+WS manage tous les postes il y aurait plus de droits.
+La solution fonctionne mais il n'y a pas le matériel nécessaire pour aboutir. 
+
+
+== Hugo 
+
+Je suis allé dans les paramètres de Chrome dans Confidentialité et Sécurité. Je suis allé ensuite dans paramètres du site puis en-dessous du contenu j'ai développé paramètres de contenu supplémentaire. Je suis ensuite allé dans contenu non sécurisé. J'ai ajouté l'url de pornhub.com en non autorisé. Pour ensuite revenir sur les paramètres du site et pour pouvoir ensuite bloquer toutes les autorisations du site pour ne plus avoir d'image. 
+
+
+== Sami et Chris 
+
+Chris prend la parole : Chat-GPT : on est parti dans l'explorateur de fichiers. On est allé sur le chemin window/ system32. Dans hosts : en mettant les addresses IP et le nom du site on pourrait le bloquer. On a eu un problème avec le mode administrateur. On a essayé de contourner le problème en le mettant sur le bureau . On a mis le fichier hosts sur le bureau. On a mis le site dessus. Malheureusement cela n'a pas marché. 
+
+On a essayé de chercher une autre technique avec les extensions (Hugo Like)
+
+Sami prend la parole: J'avais une idée initiale concernant OpenDSN: cela permet de configurer les paramètres DNS.
+Je me suis connecté sur le site. J'ai choisi 
+
+
+
+
+
+

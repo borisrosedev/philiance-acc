@@ -1,0 +1,16 @@
+{
+  "name": "notions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx asciidoctor-revealjs *.adoc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@asciidoctor/reveal.js": "^5.0.1",
+    "asciidoctor": "^3.0.2"
+  }
+}

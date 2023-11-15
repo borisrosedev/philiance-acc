@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="./public/assets/css/styles.css">
+</head>
+<body>
+    <div id="root">
+    </div>
+    <div id="xss-div">
+
+    </div>
+    <script type="module">
+        import { LogContainer } from "./containers/log-container.js"
+        import loginView from "./views/login-view.js"
+        const root = document.getElementById('root')
+        const logContainerInstance = new LogContainer()
+        root.innerHTML = loginView(logContainerInstance.loginForm())
+        logContainerInstance.businessLogin()
+    </script>
+</body>
+</html>

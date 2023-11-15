@@ -2,16 +2,18 @@
 require './php/connection.php';
 
 
-
-
 if(isset($_POST['email']) && isset($_POST['password'])){
-    $email = htmlspecialchars($_POST['email']);
-    $password = htmlspecialchars($_POST['password']);
+    // $email = htmlspecialchars($_POST['email']);
+    // $password = htmlspecialchars($_POST['password']);
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
     // Utilisez la connexion PDO ici
     try {
-        $stmt = $pdo->prepare('SELECT * FROM users WHERE email = ? AND password = ?');
-        $stmt->execute([$email, $password]);
+        // $stmt = $pdo->prepare('SELECT * FROM users WHERE email = ? AND password = ?');
+        // $stmt->execute([$email, $password]);
+        $query = "SELECT email, firstname, lastname, password, id FROM users WHERE email = '$email' AND password = '$password'";
+        $stmt = $pdo->query($query);
 
         // Traitez les résultats de la requête
         // ...
@@ -24,11 +26,13 @@ if(isset($_POST['email']) && isset($_POST['password'])){
             // Redirection après traitement
             header("Location: http://localhost:3000/app/index.php");
             exit();
-        } else {
-            // Aucun utilisateur correspondant trouvé, gestion de l'erreur ou redirection
-            header("Location: http://localhost:3000/app/error.php");
-            exit();
-        }
+        } 
+        
+        // else {
+        //     // Aucun utilisateur correspondant trouvé, gestion de l'erreur ou redirection
+        //     header("Location: http://localhost:3000/app/error.php");
+        //     exit();
+        // }
 
     } catch (PDOException $e) {
         // Gérez les erreurs de la requête SQL

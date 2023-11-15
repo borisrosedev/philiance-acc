@@ -1,0 +1,59 @@
+= Evaluation de la sécurité d'un site
+
+Il existe plusieurs outils et techniques pour évaluer la sécurité d'un site web. 
+
+== Certificat SSL
+
+Vérifiez si le site utilise un certificat SSL. Un site sécurisé affiche "https://" au lieu de "http://", et souvent un cadenas dans la barre d'adresse.
+
+== Navigateur Web 
+
+Les navigateurs modernes signalent souvent la sécurité d'un site à l'aide d'icônes ou de messages spécifiques. Assurez-vous que le site est marqué comme sécurisé.
+
+== Services en ligne 
+
+Utilisez des services en ligne tels que **Google Safe Browsing** (safebrowsing.google.com) pour vérifier si un site est signalé comme dangereux.
+
+== Scanners de vulnérabilités 
+
+Certains outils en ligne peuvent scanner un site pour détecter les vulnérabilités de sécurité. Des exemples incluent:
+[%step]
+* Nessus
+* OpenVAS
+* services en ligne comme Qualys.
+
+== Firewall et antivirus 
+
+Vérifiez que votre antivirus et pare-feu ne signalent pas le site comme potentiellement dangereux.
+
+== Extensions de navigateur 
+
+Des extensions comme "HTTPS Everywhere" peuvent aider à forcer la connexion sécurisée sur certains sites.
+
+== WHOIS Lookup 
+
+Consultez les informations WHOIS pour vérifier la propriété du domaine et sa date de création.
+
+== Commentaires et avis 
+
+Recherchez des commentaires et avis en ligne sur le site en question. Les expériences d'autres utilisateurs peuvent donner des indications sur la fiabilité du site.
+
+== Politique de confidentialité 
+
+Vérifiez si le site a une politique de confidentialité claire et lisez-la pour comprendre comment vos données seront traitées.
+
+== Actualité du site 
+
+Parfois, une simple recherche en ligne sur le site peut révéler des problèmes de sécurité récents.
+
+== Analyse du code source 
+
+Si vous avez des compétences techniques, l'analyse du code source peut parfois révéler des vulnérabilités. Vous pouvez utiliser des outils comme OWASP ZAP.
+
+== Remarque
+
+Il est important de noter que ces méthodes ne sont pas infaillibles, et la prudence en ligne est toujours recommandée. 
+
+===...
+
+Si vous avez des doutes sur la sécurité d'un site, il est préférable de ne pas partager d'informations sensibles et de contacter le support du site si nécessaire.

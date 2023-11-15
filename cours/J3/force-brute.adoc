@@ -1,0 +1,17 @@
+= Attaque par Force Brute 
+
+== Définition
+
+Une attaque par force brute est une méthode d'attaque où un attaquant tente de découvrir un mot de passe ou une clé en essayant toutes les combinaisons possibles de caractères jusqu'à ce que la bonne soit trouvée. 
+
+== Approche brutale
+
+C'est une approche brutale et exhaustive qui ne dépend pas de connaissances préalables sur la cible, mais plutôt de la persévérance à tester toutes les possibilités.
+
+== Exemple
+
+Par exemple, dans le cas d'un mot de passe, une attaque par force brute impliquerait d'essayer toutes les séquences possibles de lettres, chiffres et caractères spéciaux jusqu'à ce que le bon mot de passe soit trouvé. 
+
+=== Efficacité dans un cas 
+
+Cette méthode est généralement lente et gourmande en ressources, mais elle peut être efficace si le mot de passe cible est faible ou trop court.

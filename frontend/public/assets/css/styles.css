@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: url('https://cdn.pixabay.com/photo/2018/03/26/14/07/space-3262811_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+
+}
+
+#root {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+main {
+    margin-top: 10vh;
+    padding: 10px;
+}
+
+.login-page {
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 10px;
+    width: 50%;
+
+
+}
+
+#login-form {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.input-article {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-article input {
+    width: 100%;
+    padding: 10px 4px;
+}
+
+.form-button {
+    padding: 3px 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}

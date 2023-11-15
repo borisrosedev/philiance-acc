@@ -1,0 +1,95 @@
+= Intervetions J2
+
+== Passage sur bash 
+
+== Florian
+Il a du taper des commandes bash relativement à la création de dossier, de fichiers, la modification des permissions et l'arrêt de processus précise.
+
+== Pireyanthan
+Il a du écrire un script .sh dans lequel se trouvaient des commandes conditionnelles.
+
+
+== Passage sur les applications.
+11:30
+
+Pireyanthan:
+CMS : Content Manager System 
+C'est basé sur Azuriom : C'est un CMS pour des serveurs de jeux. 
+Le CMS est sécurisé il a différent cryptage (bcrypt)
+Il est containeurisé (docker)
+La bdd sql est configuré automatiquement 
+script.sq de création de tables 
+Le site est managable facilement 
+L'authentification avec STeam , on peut utiliser google, gmail, microsoft
+Le site est activé en double facteur. 
+Il a un panel administrateur. 
+Si la personne n'est pas authentifié il n'a pas accès aux autres pages. 
+- Réalisation du test :
+Accès interdit 
+This is unauthorized. 
+Plugins - blacklist du site. 
+
+Alexandre: 
+- Les formulaires : 
+capture pour éviter les spam de bot. 
+Est-ce qu'il y a des recaptCha sur les register form ? 
+
+Est-ce que tu respectes la RGPD ?
+l'ANSSI recommande 12
+
+Est-ce que tu t'es renseigné sur les failles de sécurité de Azurium
+
+Est-ce que je peux accéder au HTML ? 
+
+Comment ta base de données est-elle sécurisée ?
+
+Le rôle Admin est donné comment? 
+
+Pi : 
+- J'utilise l'authentification de steam qui est sécurisé 
+
+Pi:
+- 8 caractères avec Maj Minu caractères spéciaux
+
+Pi: Les images peuvent être voléEs, sinon rien de précis
+Anti-DOS
+
+Pi: Dernière version de mySQL 8.0  j'utilise PHP MyAdmin
+
+Pi: Par une base de données et une interface graphique.
+
+
+== Alexandre Présentation:
+11:51
+Custom App Web
+Symfony 6.3 contrairement à la version 5 un firewall applicatif
+Tous les fomrulaires que je peux avoir j'ai mis un recaptcha v.3 avec un score de 0.5 pour que les bots soient rapiudement détectés. 
+Dans le mot de passe : minimum de 12 caractères.
+Le champ type email: quand on se connecte ça va récupérer cette adresse mail pour faire une vérification d'email. 
+Sur le panier sans connexion, on ne peut pas accéder au panier
+Moteur engine : facilite expérience utilisateur
+Quand je suis connecté je peux accéder à l'epace admin
+Les rôles je les mets directement en bdd
+Limitation des la tailles des données dans la bdd 2mb
+
+
+Comment tu connais le traffic réseau sur le site ?
+- sur le site de mon hébergeur
+
+Imaginons que tu donnes un rôle adm pour un autre utilisateur ?
+- principe du least privileged
+
+Comment tu garantis que le paiement ? 
+- Stripe 
+
+Est-ce que facture ? 
+
+Est-ce que conditions générales de vente... ?
+
+Respect de la RGPD ?
+Les addresses mails en claire 
+les mots de passe : cryptés 
+
+On peut accéder à la bdd via Internet ?
+
+Sécurisé
