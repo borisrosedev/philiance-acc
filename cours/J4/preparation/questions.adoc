@@ -1,0 +1,105 @@
+= Liste des questions pouvant vous être posées 
+
+== La violation du principe du moindre privilère ou du refus par défaut est lié à quelle vulnérabilité OWASP ? 
+voir J1/BAC
+
+== Pouvez-vous retrouver le nom du cookie que j'ai créé dans le navigateur ?
+voir J1/BAC
+
+== Pourquoi est-ce que mon application frontend ne peut pas accéder au service de mon api (backend)?
+voir J1/BAC/CORS
+
+== Qu'est-ce que l'OWASP ?
+voir J1/OWASP
+
+== Quelles sont ses missions ?
+voir J1/OWASP
+
+== Qu'est-ce que l'OWASP Top 10 ?
+voir J1/OWASP
+
+== Est-ce qu'un rootkit infecte une machine ?
+voir J1/Rootkit
+
+== Quelles peuvent être les conséquences de l'installation d'un rootkit ?
+voir J1/Rootkit
+
+=== Est-ce qu'un Trojan se réplique ? 
+voir J1/Trojan
+
+=== Quelles sont les limites des antivirus conventionnels?
+voir J1/Trojan
+
+=== Qu'est-ce que le script de test EICAR ?
+voir J1/virus-de-test
+
+== Qu'est qu'un utilitaire de compression ?
+voir J1/virus-malwares
+
+== Qu'est qu'un virus de macros ?
+voir J1/virus-malwares
+
+== Comment se protéger des CSRF côté client ? (+)
+voir J2/csrf
+
+== Quelles sont les méthodes de requête HTTP ? 
+voir J2/http
+
+== Quels sont les codes d'état HTTP ?
+voir J2/http
+
+== Quelles sont les 3 premières vulnérabilités web du OWASP Top 10 ?
+voir J2/owasp-top-ten
+
+== Comment se protéger contre les failles XSS ? (+)
+voir J2/xss
+
+== Comment se protéger contre les attaques par dictionnaire ? (+)
+voir J3/attaque-par-dictionnaire
+
+== Comment prévenir les injections SQL ? (+)
+voir J3/injection-sql
+
+=== A quoi sert OWASP ZAP ?
+voir J3/OWASP-ZAP
+
+=== Donnez-moi 4 outils pour évaluer la sécurité d'une application web ?
+voir J3/tools
+
+
+== Parlez-moi de la gestion des utilisateurs avec Active directory ?
+voir notions/
+
+== Parlez-moi de la copie de contenu avec un CDN
+voir notions/
+
+== Parlez-moi du CDN et de sa relation avec la sécurité
+voir notions/
+
+== Comment pouvez-vous définir une DMZ ?
+voir notions/
+
+== Parlez-moi sur sniffing RFID avec le flipper-zero
+voir notions/
+
+== Quelles sont les exigences du SMSI avec la ISO/IEC 27001 ? (++)
+voir notions/
+
+== Quel est l'objectif principal du rolling code ?
+voir notions/
+
+== Que pouvez-vous me dire concernant le WAF et sa relation avec certaines vulnérabilités web  ? (+)
+voir notions/
+
+== Qu'est-ce qu'un Web Application Firewall (WAF) (+)
+voir notions/
+
+== Qu'est-ce que l'ingénierie sociale ?
+voir J3/ingenierie-sociale
+
+== Définissez 4 techniques d'ingénierie sociale ? (je choisis) (+)
+voir J3/ingenierie-sociale
+
+== Définissez 4 techniques de manipulation ? (je choisis) (+)
+voir J3/techniques-manip
+

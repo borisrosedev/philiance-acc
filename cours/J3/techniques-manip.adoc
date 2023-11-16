@@ -1,0 +1,46 @@
+= Techniques de manipulation
+
+== Pied dans la porte (Foot-in-the-door) 
+
+C'est l'inverse de la technique de la "porte au nez". On commence par faire une petite demande, facile à accepter, puis on suit avec une demande plus importante une fois que la personne a déjà accepté la première.
+
+== Leurre (Bait and Switch) 
+
+On attire d'abord les personnes avec une offre attrayante ou un produit, puis on modifie les termes ou les conditions une fois qu'elles ont manifesté leur intérêt.
+
+== Amorçage (Priming) 
+
+Exposer délibérément quelqu'un à certaines informations ou stimuli avant de lui présenter une demande, pour influencer ses réponses ou ses comportements ultérieurs.
+
+== Engagement et cohérence (Commitment and Consistency) 
+
+Encourager une personne à prendre un petit engagement initial, puis à renforcer et à amplifier cet engagement en ligne avec la cohérence de ses actions antérieures.
+
+== Effet de gel (Door-in-the-face) 
+
+Proposer une demande exagérée dans le but de susciter le rejet, puis présenter une demande plus modérée qui semble plus acceptable en comparaison.
+
+== Effet de contraste (Contrast Effect) 
+
+Modifier la perception d'un élément en exposant la personne à un autre élément extrême avant.
+
+== Preuve sociale (Social Proof) 
+
+Utiliser l'influence du comportement des autres pour convaincre quelqu'un d'adopter une action ou une décision particulière.
+
+== Scarcité (Scarcity) 
+
+Faire valoir que quelque chose est rare, en voie de disparition ou difficile à obtenir, pour augmenter sa valeur perçue et l'incitation à l'obtenir.
+
+== Autorité (Authority) 
+
+Utiliser des figures d'autorité, des titres ou des symboles de pouvoir pour influencer et persuader les autres.
+
+== Similitude (Liking) 
+
+Les gens sont plus enclins à être influencés par ceux qu'ils aiment, respectent ou trouvent similaires à eux-mêmes.
+
+
+== Pour aller plus loin
+
+link:ingénierie-sociale.html[Lien vers le cours sur IPS, IDS, EDR, SIEM et SOAR]

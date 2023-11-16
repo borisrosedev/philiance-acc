@@ -1,0 +1,27 @@
+= Cas pratiques
+
+.Exo
+Forcer simplement la navigation vers des URL cibles. 
+
+voir J1/BAC/Scénario2
+
+.Exo
+Modifiez simplement le paramètre du navigateur pour envoyer n'importe quel numéro de compte que vous souhaitez pour essayer d'accéder à la page de l'utilisateur.
+
+voir J1/BAC/Scénario1
+
+.Exo
+Ecrire un petit fichier en bash qui supprime un dossier sensible dès qu'il est exécuté 
+
+.Exo
+Réaliser une attaque par force brute sur un mot de passe composé de trois caractères
+
+.Exo
+Réaliser une injection SQL pour accéder au compte de tim@gmail.com
+
+.Exo
+Audit de sécurité d'une site web 
+
+
+
+

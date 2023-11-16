@@ -25,7 +25,7 @@ if(isset($_SESSION['user'])){
         <form  action="" method="post" class="login-form">
             <section class="login-form-inputs">
                 <input type="text" name="email" placeholder="Email"/>
-                <input type="password" name="password" placeholder="Password"/>
+                <input type="text" name="password" placeholder="Password" pattern="[a-z,A-Z]{6,12}"/>
             </section>
             <section>
                 <button type="submit"> Connexion </button>

@@ -1,0 +1,78 @@
+= Ingénierie sociale
+
+
+== Définition
+
+L'ingénierie sociale est une technique utilisée 
+[%step]
+* pour manipuler ou tromper les individus afin d'obtenir: 
+- des informations confidentielles
+- un accès à des systèmes informatiques 
+* pour les inciter à effectuer certaines actions. 
+
+
+
+== Phishing :
+
+
+Envoyer des courriels, des messages texte ou des appels téléphoniques frauduleux qui semblent provenir d'organisations légitimes pour inciter les utilisateurs à divulguer des informations personnelles telles que des mots de passe, des numéros de carte de crédit, etc.
+
+
+== Hameçonnage (Spear Phishing) :
+
+
+
+Personnaliser les attaques de phishing en utilisant des informations spécifiques sur la victime pour les rendre plus convaincantes et persuader la victime de divulguer des informations sensibles.
+
+
+
+== Vishing (Voice Phishing) :
+
+
+Utilisation d'appels téléphoniques pour inciter les victimes à divulguer des informations confidentielles en se faisant passer pour des organisations légitimes, des banques ou des entités gouvernementales.
+
+== Prétexte :
+
+Inventer un scénario crédible pour obtenir des informations confidentielles. 
+
+=== Exemple
+
+Par exemple, se faire passer pour un technicien informatique ou un représentant de service pour obtenir des informations d'identification.
+
+== Ingénierie sociale basée sur les réseaux sociaux :
+
+
+Collecter des informations sur les victimes à partir de plateformes de médias sociaux pour personnaliser les attaques, telles que l'utilisation de détails personnels pour gagner la confiance ou obtenir des informations sensibles.
+
+== Dumpster Diving :
+
+Fouiller les poubelles, les corbeilles de recyclage ou d'autres déchets pour récupérer des informations sensibles, des documents confidentiels ou des mots de passe jetés négligemment.
+
+== Infiltration physique :
+
+Pénétrer physiquement dans des locaux sécurisés sous prétexte d'être un employé ou un prestataire de services, afin d'accéder à des systèmes informatiques ou à des informations sensibles.
+
+== Tailgating (Piggybacking) :
+
+Profiter de la courtoisie des employés en se faisant passer pour un employé légitime pour accéder à des locaux sécurisés ou à des systèmes informatiques.
+
+== Quizzing (Questioning) :
+
+Poser des questions innocentes mais ciblées pour obtenir des informations sensibles. Par exemple, en se faisant passer pour un enquêteur ou un chercheur.
+
+== Impersonation :
+
+Se faire passer pour une personne de confiance, un employé ou une autorité pour manipuler les victimes et obtenir des informations ou des accès.
+
+== Tromperie en ligne :
+
+Créer de faux sites Web ou services qui imitent des sites légitimes pour inciter les utilisateurs à fournir leurs identifiants de connexion ou d'autres informations.
+
+== Attaque d'ingénierie sociale par téléphone (Telephony Social Engineering) :
+
+Utiliser des techniques de persuasion pour obtenir des informations d'identification par téléphone auprès des victimes.
+
+
+== En résumé 
+
+Ces tactiques soulignent l'importance de la sensibilisation et de la formation pour se protéger contre les attaques d'ingénierie sociale et pour éduquer les utilisateurs sur les signes avant-coureurs et les meilleures pratiques en matière de sécurité informatique.

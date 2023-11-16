@@ -54,6 +54,6 @@ Si vous avez des compétences techniques, l'analyse du code source peut parfois 
 
 Il est important de noter que ces méthodes ne sont pas infaillibles, et la prudence en ligne est toujours recommandée. 
 
-===...
+=== ...
 
 Si vous avez des doutes sur la sécurité d'un site, il est préférable de ne pas partager d'informations sensibles et de contacter le support du site si nécessaire.

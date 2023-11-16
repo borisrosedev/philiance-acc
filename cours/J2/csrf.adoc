@@ -28,7 +28,7 @@ Pendant que l'utilisateur est toujours authentifié, il visite un autre site mal
 
 Ce site peut contenir du code malveillant, tel qu'une image, une vidéo ou un script, qui effectuera des requêtes HTTP à l'insu de l'utilisateur.
 
-=== Acte 3 : Utilisation d'une URL d'action sensible avec informatins de session
+=== Acte 3 : Utilisation d'une URL d'action sensible avec informations de session
 
 
 Le code malveillant du site malveillant utilise l'URL d'une action sensible (par exemple, changer le mot de passe, effectuer un achat, supprimer un compte, etc.) sur le site légitime en utilisant les informations d'authentification stockées dans les cookies du site cible.

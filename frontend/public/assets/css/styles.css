@@ -1,9 +1,6 @@
 body {
     margin: 0;
     height: 100vh;
-    background: url('https://cdn.pixabay.com/photo/2018/03/26/14/07/space-3262811_1280.jpg');
-    background-position: center;
-    background-size: cover;
     align-items: center;
     justify-content: center;
     display: flex;
