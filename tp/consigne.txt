@@ -1,0 +1,15 @@
+Travail Pratique:
+
+1° Application des notions vues en cours :
+
+https://www.root-me.org/fr/Challenges/Web-Client/Javascript-Authentification
+
+- Réaliser quelques challenges relativement aux notions que nous avons vues ensemble
+- Vous me ferez des captures d'écran de vos résultats
+
+2°) En outre, pour ceux et celles qui ne l'ont pas déjà fait:
+
+- Préparez un exposé sur le Content Security Policy
+- Analyser son intérêt (autrement dit nous vous contentez pas de faire un copier-coller) 
+et pensez à de potentielles limites
+
